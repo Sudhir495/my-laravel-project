@@ -21,7 +21,7 @@ A Laravel-based multi-tenant SaaS application where users can register, log in, 
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/multi-tenant-saas.git
+git clone https://github.com/Sudhir495/my-laravel-project.git
 cd multi-tenant-saas
 ```
 
