@@ -37,8 +37,8 @@ php artisan key:generate
 ```
 
 ### 4. Database Setup
-- Create a database in MySQL (e.g., `multi_tenant_saas`)
-- Update `.env` with your database credentials
+
+- Check `.env` with your database credentials 
 ```env
 DB_DATABASE=multi_tenant_saas
 DB_USERNAME=root
