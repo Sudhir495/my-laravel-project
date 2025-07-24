@@ -33,7 +33,6 @@ npm install
 
 ### 3. Environment Setup
 ```bash
-cp .env.example .env
 php artisan key:generate
 ```
 
