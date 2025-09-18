@@ -3,7 +3,7 @@
    use App\Http\Controllers\CompanyController;
    use Illuminate\Support\Facades\Route;
 
-   // Define root route
+   
    Route::get('/', function () {
        return auth()->check() ? redirect()->route('dashboard') : redirect()->route('login');
    });
