@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Company;
 use Illuminate\Http\Request;
-use Illuminate\Routing\Controller; // Ensure this is imported
+use Illuminate\Routing\Controller; 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 
@@ -12,11 +12,11 @@ class CompanyController extends Controller
 {
     public function __construct()
     {
-        // Apply middleware for API routes
+        
         $this->middleware('auth:sanctum')->only(['index', 'store', 'update', 'destroy', 'setActive']);
-        // Apply middleware for web routes
+        
         $this->middleware('auth')->only(['create', 'edit']);
-        // Apply company scoping middleware, excluding routes that don't need it
+        
         $this->middleware(\App\Http\Middleware\EnsureCompanyIsSet::class)->except(['index', 'store', 'setActive', 'create', 'edit']);
     }
 
